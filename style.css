@@ -47,10 +47,3 @@ nav a button:hover {
     background-color: rgba(100, 100, 100, 0.2);
     cursor: pointer;
 }
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float:center;
-  width: 33.33%;
-  padding: 1px;
-}
-

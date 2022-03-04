@@ -6,44 +6,90 @@
     Autors: Nathan Cochran & Maxwell Williams
     Date: 2022-02-15
 */
+
+
+/*********************************************
+* Base CSS Styles
+*********************************************/
+
+/* Basic Styles */
 html {
     height: 100%;
 }
 body {
     margin: 0px;
     width: 100%;
+    min-height: 100%;
 }
 
 /* Styling Header */
 header {
     margin: 0px;
     padding: 10px;
+    font-size: 5vw;
     background-color: white;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 header > * {
     display: inline-block;
 }
-
 .websiteTitle {
-    font-size: 6em;
+    font-size: 8vw;
     margin: 0px 0px 10px 0px;
     padding-left: 2%;
 }
-
 nav {
     float: right;
-    padding: 35px;
+    padding: 0.25em 35px 35px 35px;
 }
 nav a button {
-    width: 80px;
-    padding: 0px;
+    width: 8vw;
     height: 50px;
+    padding: 0px;
+    margin: 0px;
     border: none;
-    background-color: white;
-    font-size: 0.9rem;
+    background-color:  white;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1.5vw;
 }
 nav a button:hover {
     background-color: rgba(100, 100, 100, 0.2);
+    transition: background-color 0.3s ease-in-out;
     cursor: pointer;
+}
+
+/* Styling the Footer **/
+footer {
+    background-color: hsla(187, 62%, 71%, 1);
+    display: grid;
+    margin: 0px;
+}
+footer div {
+    text-align: center;
+    padding: 15px;
+}
+
+/**********************************************
+* Mobile Styles: 0 to 480px
+***********************************************/
+
+@media only screen and (max-width: 480px) {
+    nav { backgorund-color: red; }
+
+    footer { grid-template-columns: 1fr; }
+}
+
+/*********************************************
+* Tablet Styles: 481px and greater
+**********************************************/
+
+@media only screen and (min-width: 481px) {
+    footer { grid-template-columns: 1fr 1fr; }
+}
+
+/*********************************************
+* Desktop Styles: 769px and greater
+**********************************************/
+@media only screen and (min-width: 769px) {
+    footer { grid-template-columns: 2fr 1fr 1fr 1fr; }
 }

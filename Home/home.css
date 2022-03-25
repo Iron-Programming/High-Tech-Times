@@ -1,14 +1,25 @@
 @charset "utf-8"
 
-#topStories {
-    display: flex;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+#something {
+  background-color: red;
+  width: 500px;
+  min-height: 300px;
+  /*width: 100%;
+  margin: 25px 0px 25px 0px;
+  padding: 30px;
+  background-color: red;
+  height: 300px;*/
 }
 
-#topStories img {
-    width: 25%;
-    margin: 0px;
-    height: 200px;
+/*
+.imageList .box {
+  display: flex;
+  width: 100%;
+  margin: 5px 0px 5px 0px;
 }
+
+.box img {
+    width: 300px;
+    margin: 0px;
+}
+*/

@@ -16,14 +16,30 @@
     </head>
 
     <!-- Body -->
-    <body>
+    <body onclick="closeNavigation()">
         <header>
-            <h1 class="websiteTitle">High Tech Times</h1>
-            <nav>
+          <h1 class="websiteTitle">High Tech Times</h1>
+          <nav>
+            <div class="desktop">
               <a href="index.html"><button>Home</button></a>
               <a href="news.html"><button>News</button></a>
               <a href="contact.html"><button>Contact Us</button></a>
-            </nav>
+            </div>
+            
+            <div class="mobile">
+              <a class="hamburger" href="javascript:void(0);" onclick="mobileNavigation()">
+                <span class="material-icons">menu</span>
+              </a>
+              <div class="mobileLinks" style="display:none">
+                <div class="flexCol">
+                  <a href="index.html"><button>Home</button></a>
+                  <a href="news.html"><button>News</button></a>
+                  <a href="contact.html"><button>Contact Us</button></a>
+                </div>
+              </div>
+            </div>
+            
+          </nav>
         </header>
 
         <!-- Main Content -->

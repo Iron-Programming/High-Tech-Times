@@ -13,6 +13,12 @@
   <meta charset="utf-8">
   <link href="style.css" rel="stylesheet"/>
   <link href="Home/home.css" rel="stylesheet"/>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Scripts-->
+  <script src="mobile.js" defer></script>
 </head>
 
 <!-- Body -->
@@ -20,9 +26,25 @@
   <header>
     <h1 class="websiteTitle">High Tech Times</h1>
     <nav>
-      <a href="index.html"><button>Home</button></a>
-      <a href="news.html"><button>News</button></a>
-      <a href="contact.html"><button>Contact Us</button></a>
+      <div class="desktop">
+        <a href="index.html"><button>Home</button></a>
+        <a href="news.html"><button>News</button></a>
+        <a href="contact.html"><button>Contact Us</button></a>
+      </div>
+      
+      <div class="mobile">
+        <a class="hamburger" href="javascript:void(0);" onclick="mobileNavigation()">
+          <span class="material-icons">menu</span>
+        </a>
+        <div class="mobileLinks" style="display:none">
+          <div class="flexCol">
+            <a href="index.html"><button>Home</button></a>
+            <a href="news.html"><button>News</button></a>
+            <a href="contact.html"><button>Contact Us</button></a>
+          </div>
+        </div>
+      </div>
+      
     </nav>
   </header>
 
@@ -80,5 +102,7 @@
     </div>
   </footer>
 </body>
+
+<!-- Mobile Navitation Script-->
 
 </html>

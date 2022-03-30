@@ -1,1 +1,37 @@
-@charset "utf-8"
+@charset "utf-8";
+
+
+/* ImageList: Latest Stories */
+.imageList {
+  background-color: rgba(168, 168, 168, 0.3);
+  width: 100%;
+  padding: 25px 0px 25px 0px;
+}
+.imageList .boxcontainer {
+  display: flex;
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+  box-shadow: rgb(255, 255, 255) 0px -5px 5px, rgb(255, 255, 255) 0px 5px 5px;
+  background-color: rgb(255, 255, 255);
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.imageList .boxcontainer::-webkit-scrollbar {
+  display: none;
+}
+.imageList .boxcontainer img {
+  width: 225px;
+}
+.imageList .boxcontainer .box {
+  margin: 10px;
+}
+.imageList .listTitle {
+  font-size: 35px;
+  margin: 5px 5px 10px 25px;
+}
+.imageList .listSubtitle {
+  font-size: 15px;
+  font-style: italic;
+  margin: -10px 5px 15px 25px;
+}

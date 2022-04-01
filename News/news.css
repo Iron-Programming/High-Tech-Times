@@ -1,2 +1,83 @@
 @charset "utf-8";
 
+/*
+    File: news.class
+    Description: Styles the news.html page.
+    Autors: Nathan Cochran & Maxwell Williams
+    Date: 2022-04-01
+*/
+
+
+/*********************************************
+* Base CSS Styles
+*********************************************/
+
+.articlePreview {
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    height: 300px;
+    background-color: rgb(181, 182, 179);
+}
+.previewDescription {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-bottom: 15px;
+}
+.articlePreview img {
+    height: 100%;
+}
+.readMore {
+    background-color: rgba(23, 94, 175, 0.5);
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    transition: border-radius 0.3s ease-in-out;
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 15px;
+    float: right;
+}
+.readMore:hover {
+    border-radius: 25px 0px 25px 0px;
+    transition: border-radius 0.3s ease-in-out;
+}
+.previewName {
+    font-size: 30px;
+    margin: 15px 15px 15px 15px;
+    text-align: center;
+}
+.articlePreview p {
+    font-size: calc(10px + 0.75vw);
+    height: 180px;
+    margin: 0px 15px 10px 15px;
+    overflow-y: scroll;
+}
+.articlePreview p::after {
+    content: " ... ";
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+@media only screen and (max-width: 900px) {
+    .articlePreview img {
+        width: 100%;
+        height: auto;
+    }
+    .articlePreview p {
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .articlePreview {
+        flex-direction: column;
+        height: auto;
+    }
+    .readMore {
+        width: 90%;
+        margin-left: 5%;
+        float: none;
+        justify-self: center;
+    }
+}

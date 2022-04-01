@@ -1,2 +1,44 @@
 @charset "utf-8";
 
+.formTitle {
+    font-size: 25px;
+    margin: 50px 50px 10px 5%;
+}
+.formSubtitle{
+    font-size: 18px;
+    font-style: italic;
+    margin: 0px 0px 50px 5%;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px 5% 50px 5%;
+    background-color: rgba(125, 125, 125, 0.5);
+    padding: 25px;
+    box-sizing: border-box;
+}
+.contactForm input, #message {
+    margin: 25px 5% 25px 5%;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid rgb(23, 94, 175);
+}
+#message {
+    height: 400px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+.contactForm input[type=”text”]:focus {
+    border: 3px solid rgb(17, 107, 211);
+}
+#formButtons input[type="submit"] {
+    background-color: rgb(17, 107, 211);
+    margin: 15px 5% 0px 5%;
+    width: 90%;
+}
+#formButtons input[type="reset"] {
+    margin: 15px 5% 0px 5%;
+    width: 90%;
+}

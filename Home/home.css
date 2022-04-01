@@ -21,7 +21,7 @@
   display: none;
 }
 .imageList .boxcontainer img {
-  width: 225px;
+  width: calc(225px + 10vw);
 }
 .imageList .boxcontainer .box {
   margin: 10px;

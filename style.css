@@ -123,7 +123,7 @@ nav .desktop a button:hover {
     align-items: center;
 }
 .pageNameBorderLeft {
-    border-top: 5px solid rgb(23, 94, 175);
+    border-top: 7px solid rgb(23, 94, 175);
     margin-left: 10px;
 
     flex-basis: 600px;
@@ -132,8 +132,6 @@ nav .desktop a button:hover {
 }
 .pageName {
     flex-basis: 200px;
-
-    font-size: 50px;
     text-align: center;
     box-sizing: border-box;
     padding: 5px 50px 5px 47px;
@@ -141,7 +139,7 @@ nav .desktop a button:hover {
     background-color: rgb(23, 94, 175);
 }
 .pageNameBorderRight {
-    border-top: 5px solid rgb(23, 94, 175);
+    border-top: 7px solid rgb(23, 94, 175);
     margin-right: 10px;
 
     flex-basis: 50px;
@@ -240,5 +238,5 @@ footer div a {
     .logoContainer p { display: block; }
     .pageNameBorderLeft {flex-basis: 600px; flex-shrink: 2; flex-grow: 2;}
     .pageNameBorderRight { flex-basis: 50px; flex-shrink: 1; flex-grow: 0.5; }
-    .pageName { font-size: 50px; flex-basis: 200px; padding: 5px 50px 5px 47px;}
+    .pageName { font-size: calc(10px + 2vw); flex-basis: 5vw; padding: 5px 30px 5px 30px;}
 }

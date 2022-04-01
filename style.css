@@ -205,6 +205,8 @@ footer div a {
 @media only screen and (max-width: 480px) {
     footer { grid-template-columns: 1fr; }
     .copyrightCol { grid-column: 1/span 1; }
+    .desktop { display: none; }
+    .mobile { display: block; }
     .mobile .mobileLinks { width: 100vw; }
     .logoContainer p { display: none; }
 }

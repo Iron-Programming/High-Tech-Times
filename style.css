@@ -209,6 +209,9 @@ footer div a {
     .mobile { display: block; }
     .mobile .mobileLinks { width: 100vw; }
     .logoContainer p { display: none; }
+    .pageNameBorderLeft {flex-basis: 30%; flex-shrink: 1; flex-grow: 1; }
+    .pageNameBorderRight {flex-basis: 30%; flex-shrink: 1; flex-grow: 1; }
+    .pageName { font-size: 30px; flex-basis: 125px; padding: 5px 10px 5px 10px;}
 }
 
 /*********************************************

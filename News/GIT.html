@@ -133,12 +133,28 @@
           </p>
           
           <h5 class="bodyTextHeading">Using Github Desktop</h5>
+          <div class="screenshotContainer floatRight"><img onclick="enlargeImage(this)" class="defaultImage screenshot" src="../Media/GIT/GithubDesktop.png" alt="Screenshot of Github Desktop interface."></div>
           <p class="articleBodyText">
             Github Desktop gets the best of both worlds: the amazing collaboration features from Github, and the convenient coding on your desktop. Don't forget of course, that we are using GIT to keep track of our files. 
             <br>Before preceding, make sure that you have a Coding Editor that you can use. I would recommend <a href="https://atom.io/" target="_blank">Atom</a> or <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">VisualStudio</a>, both of which are available on either Mac or Windows (VisualStudioCode for Mac).
             <br>First things first, we need to download the <a href="https://desktop.github.com/" target="_blank">Github Desktop</a> app. Once we have done that, we are ready to roll!
-            <br>
+            <br><br>Okay, so once you are in the Github Desktop app, you need to connect to your Github account. You should see an opening screen welcoming you and you should be able to conent your account from there.
+            <br>After you are connected, you can <strong>clone</strong> a repository from Github by going to File > Clone Repository (you can optionally create a new one).
+            <br>Once you have cloned the repository, you should have a interface looking something like the image you see to the right/above.
           </p>
+          <div class="screenshotContainer floatLeft"><img onclick="enlargeImage(this)" class="defaultImage screenshot" src="../Media/GIT/Commit.png" alt="Screenshot of commit."></div>
+          <p>
+            At this point, we have everything set up, and the only thing to do now is to code! The process is not too complicated. To start, we should always <strong>fetch</strong> the origin to make sure we are up to date with the online Github repository. Then we can open up our repository on our desktop using our default coding editor (as shown in image), which you will need to set first time.
+            <br>Now, whenever you make changes to your local repository, such as adding new files are changing existing ones, you are not utilizing GIT yet. To make another 'save point' we need to commit our changes to the main branch. We can do this by clicking in the Github Desktop interface and then adding a commit.
+            <br>The area showing your changed, added, or deleted files is the graphical representation of what is called the "Staging Area" in GIT. We can remove which files we want to be in the staging area by clicking the check mark. All the checked items are in the staging area and thus will be committed whenever we make a commit.
+            <br>As see in the screenshot above/left, I was making a commit to this article. The "green +" indicates a newly created file, and a "yellow dot" indicates a changed file.
+            <br>Once you have made one of more commits on your local repository, the option for "Fetch origin" should change to "Push origin". Now you can push your local repository up to the origin (the Github repository).
+            <br><br>The last big component of GIT is branches, and this is where GIT can really shine with collabotive work. To create a branch, click on "Current Branch" and click "Add new".
+            <br> Whenever you work on a branch, you are not making changes to the main branch. Thus you won't accidentally ruin the main project (website in our case). This is especially handy for web developers who work to maintain their website. They can work on another branch besides main and once they are sure they have made the correct changes, then they can <strong>merge</strong> the branch back into the main/master branch.
+          </p>
+
+          <h5 class="bodyTextHeading">Summary</h5>
+          <p>And that is the very basics of GIT, Github, and Github Desktop. There is a lot more to GIT and Github's functionality, especially when it comes to branching and making pull requests. Feel free to send us a request if you want us to make more tutorials about GIT and Github!</p>
         </div>
     </article>
 

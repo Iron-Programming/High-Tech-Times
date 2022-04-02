@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
-    File: contact.html
-    Description: contact.html is a page where people can contact the author(s) HTT email.
+    File: thanks.html
+    Description: thanks.html is a page where people are brought to after submitting a contact form
     Authors: Nathan Cochran & Maxwell Williams
-    Date: 2022-02-15
+    Date: 2022-04-2
 -->
 
 <html lang="en">
@@ -11,9 +11,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
-        <title>Contact Us | HTT</title>
+        <title>Thank You | HTT</title>
         <link href="style.css" rel="stylesheet"/>
-        <link href="Contact-Us/contact.css" rel="stylesheet"/>
+        <link href="Contact-Us/thanks.css" rel="stylesheet"/>
 
         <!-- Fonts & Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -62,30 +62,8 @@
           </div>
 
           <!-- Contact Us Form -->
-          <h5 class="formTitle">Give us Feedback!</h5>
-          <p class="formSubtitle">Drop us an email with tips, article requests, and more!</p>
-          <form class="contactForm" method="POST" action="https://formsubmit.co/205712@mail.macc.edu">
-            <!-- Name (*Required) -->
-            <input name="name" id="name" type="text" placeholder="Name" required/>
-
-            <!-- Email (*Required) -->
-            <input name="email" id="email" type="text" placeholder="Email" required/>
-
-            <!--Message (*Required) -->
-            <textarea name="message" id="message" type="text" placeholder="Message" required></textarea>
-
-            <!-- Form Buttons -->
-            <div id="formButtons">
-              <input id="submit" type="submit" value="Submit My Survey" />
-              <input id="reset" type="reset" value="Cancel" />
-            </div>
-
-            <!-- Thank You Page -->
-            <input type="hidden" name="_next" value="thanks.html">
-
-            <!-- Subject Line (for email) -->
-            <input type="hidden" name="_subject" value="Feedback from HTT.">
-          </form>
+          <h2 class="formTitle">Thank You for the Feedback!</h2>
+          
         </main>
 
   <!-- Footer -->

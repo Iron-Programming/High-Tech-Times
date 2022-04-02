@@ -64,21 +64,19 @@
           <!-- Contact Us Form -->
           <h5 class="formTitle">Give us Feedback!</h5>
           <p class="formSubtitle">Drop us an email with tips, article requests, and more!</p>
-          <form class="contactForm" method="POST" action="https://formsubmit.co/205712@mail.macc.edu">
+          <form target="_blank" class="contactForm" method="POST" action="https://formsubmit.co/205712@mail.macc.edu">
             <!-- Name (*Required) -->
             <input name="name" id="name" type="text" placeholder="Name" required/>
 
             <!-- Email (*Required) -->
-            <input name="email" id="email" type="text" placeholder="Email" required/>
+            <input name="email" id="email" type="email" placeholder="Email" required/>
 
             <!--Message (*Required) -->
             <textarea name="message" id="message" type="text" placeholder="Message" required></textarea>
 
             <!-- Form Buttons -->
-            <div id="formButtons">
-              <input id="submit" type="submit" value="Submit My Survey" />
-              <input id="reset" type="reset" value="Cancel" />
-            </div>
+            <input id="submit" type="submit" value="Submit My Survey" />
+            <input id="reset" type="reset" value="Cancel" />
 
             <!-- Thank You Page -->
             <input type="hidden" name="_next" value="thanks.html">

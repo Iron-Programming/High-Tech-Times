@@ -23,7 +23,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
   <!-- Scripts-->
-  <script src="../mobile.js" defer></script>
+  <script src="../tools.js" defer></script>
 </head>
 
 <!-- Body -->
@@ -66,11 +66,80 @@
     <article class="newsArticle">
         <img class="thumbnailImage" src="../Media/GITImage.jpg">
         <h4 class="fullArticleName">GIT & Github: The best software developer tools.</h4>
-        <p class="articleBodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="mainArticleContent">
+          <h5 class="bodyTextHeading">Introduction to GIT & Github</h5>
+          <p class="articleBodyText">If you asked me what tool I thought was the most useful for code developers, I would undoubtedly say <em>GIT & Github</em>. Now obviously you need a good coding editor as well, but that is kind of already assummed.
+            <br>GIT and Github are extremely helpful because of two reasons. First, they make changing your code project extremely easy. Accidentally made a change you didn't like? No problem. Just look through your project history and find the version of the code you are looking for. The second reason that makes these tools so great is that because they are built for specifically for project management, they work amazing for teams.
+            <br><br>Now <strong>GIT</strong> is the actual tool, and is run on your local computer. GIT works great, but it takes some time to learn the commands before you can use it. This is where the beauty of <strong>Github</strong> comes in. Github is an webpage (online) that lets you use the functionality of GIT from any of your devices--this makes collaborating with others even more easy! Finally, as it is not as convenient to actually do the coding process online, Github has an desktop app called <strong>Github Desktop</strong> which lets you connect to your Github account on your local device, and then you can code in your Coding Editor (or Integrated Development Environment) as you need.
+            <br>In this article I will be showing you the underlying concepts used in GIT, but I will show you how to implement it via Github and Github Desktop, as they are more user-friendly than the command-line interface we have to deal with when using straight-out GIT. Enough talk, let's get started!
+          </p>
+          <h5 class="bodyTextHeading">Underlying concepts of GIT</h5>
+          <p class="articleBodyText">
+            So GIT is a version control system, which basically means that it tracks changes to our project files (in this case, coding files such as HTML, CSS, and JavaScript). GIT is the most popular version control system out there, and was originally developed by Linus Torvalds in 2005 to make developing the Linux kernel easier.
+            <br>The first concept crucial to GIT's functionality is that of <strong>commits</strong>. A commit is best thought of as a "save point": just like how you can restart at your save point in a game if you lose, you can likewise restart back to previous versions of your code if you accidentally mess up. This is extremely useful if you ever need to access code that you wrote earlier for the project but that you replaced. This way, you don't have to store important bits of code you might use later, GIT will keep track of everything for you!
+            <br>The other term you will hear a lot when working with GIT is a <strong><em>repository</em></strong>, often abbreviated as <strong>repo</strong>. A GIT repo is the directory holding your files, and it is what manages and keep tracks of your files, as you make commits and whatnot.
+            <br><br>In GIT, you would have commands to create files, add them to the "staging area", commit, revert back to previous commits, and so on. But because we won't be working with GIT directly, we won't be going over those things right now. Instead, we will now take a short look at how Github works before showing it in action.
+            <br>So GIT can be used without internet access, but one of the things that really make GIT shines is collaboration. The best way to do this is to store a GIT repository online, and then each of the code developers can make a <strong>clone</strong> of that repository and work on it at their desktop. The code developers can <em>pull</em> the code from the online repository (called the <strong>origin</strong>) and they can <em>push</em> it back when they have made changes. <a href="https://github.com/" target="_blank">Github</a> is a great place to store your repository, but it is not the only website offering this service. Another two common websites offering this service include <a href="https://gitlab.com/" target="_blank">GitLab</a> and <a href="https://bitbucket.org/" target="_blank">BitBucket</a>. 
+          </p>
+          <h5 class="bodyTextHeading">Getting started with Github</h5>
+          <p class="articleBodyText">
+            Github is owned by Microsoft, and is the most popular place to store our remote repositories. To get started <a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" target="_blank">create an account</a>.
+          </p>
+          <ul class="normalList">
+            <li>At the link given (above), provide your email, password, and username.</li>
+            <li>Choose if you want to receive product updates.</li>
+            <li>Solve Puzzle to verify that you are a human.</li>
+            <li>Create your account!</li>
+            <li>To continue from there, you will need to verify your account by going to the email you attached to your account and get the access code.</li>
+            <li>You can then continue with a free account. If you are a student, I would definitely recommend checking out <em><a href="https://education.github.com/pack" target="_blank">software development pack for students</a></em> later on, but for now, just continue with a free account.</li>
+          </ul>
+          <div class="screenshotContainer floatRight"><img onclick="enlargeImage(this)" class="defaultImage screenshot" src="../Media/GIT/NewRepo.png" alt="Screenshot of New Repository button."></div>
+          <p class="normalList">
+            Like all apps, Github will take some time to get used to. You can explore Github and customize your account as you enter your journey into Github. For now, we will want to pay attention to your Github Repositories section, which will currently be empty.
+            <br>In this example, I will be showing you how to create a Github Repo for an webpage. Another nice feature about Github is that it has a feature (<strong>Github Pages</strong>) which lets you view your webpage in the browser. This way, a group of web developers can make sure they are all on the same page, literally!
+            <br>But anyway, for now we just need to create a repository, as shown in the image to the right. When we create a new repository, we will need to provide the following information.
+          </p>
+          <ul>
+            <li>Repository name (required)</li>
+            <li>Description (optional)</li>
+            <li>Public vs Private</li>
+            <li>You can choose whether to add a README, .gitignore, and license files.</li>
+          </ul>
+          <p class="articleBodyText">
+            If you plan to collaborate, make sure to configure your repository as public. The README file is simply a description of your repository. The License File determines how users can use your code. I like to use a more liberal license like MIT.
+            <br><br>
+          </p>
+          <div class="screenshotContainer floatLeft"><img onclick="enlargeImage(this)" class="defaultImage screenshot" src="../Media/GIT/RepoDashboard.png" alt="Image of Github Repository Dashboard"></div>
+          <p class="articleBodyText">
+            From here, you can manage your project. You can click on "Add file" to either create a new file directly on Github or upload files from your dekstop. To great a directory on Github directly, you can name your file /somedirectory/filename, where is "somedirectory" doesn't exist it will be created.
+            <br><br>Earlier I said that we would be creating a webpage with this. First, we need to create an index.html file, which is the file that Github Pages starts the webpage at. Below is a sample file for Hello World.
+          </p>
+          <div class="codeContainer"><pre class="code">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>Hello World!&lt;/title>
+  &lt;head>
+  &lt;body>
+    &lt;p>Hello World, this is my first Github repo!&lt;/p>
+  &lt;/body>
+&lt;/html></pre></div>
+          <div class="screenshotContainer floatLeft"><img onclick="enlargeImage(this)" class="defaultImage screenshot" src="../Media/GIT/GithubPages.png" alt="Screenshot of Github Pages Configuration"></div>
+          <p class="articleBodyText">Notice that to add the changes to the Github repo you must "commit" the file, adding a description for what you changed. 
+            <br>After we added index.html, we can go to Settings > Github Pages and configure the appropriate settings.
+            <br>The only thing you need to do is select the "None" dropdown box and choose to build GithubPages from the main branch.
+            <br>It will take up to 5 minutes for Github to recognize the newly configured pages. After that, you should have a brand new website!
+          </p>
+          
+          <h5 class="bodyTextHeading">Using Github Desktop</h5>
+          <p class="articleBodyText">
+            Github Desktop gets the best of both worlds: the amazing collaboration features from Github, and the convenient coding on your desktop. Don't forget of course, that we are using GIT to keep track of our files. 
+            <br>Before preceding, make sure that you have a Coding Editor that you can use. I would recommend <a href="https://atom.io/" target="_blank">Atom</a> or <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">VisualStudio</a>, both of which are available on either Mac or Windows (VisualStudioCode for Mac).
+            <br>First things first, we need to download the <a href="https://desktop.github.com/" target="_blank">Github Desktop</a> app. Once we have done that, we are ready to roll!
+            <br>
+          </p>
+        </div>
     </article>
 
   </main>

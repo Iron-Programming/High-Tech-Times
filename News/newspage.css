@@ -17,7 +17,6 @@
     margin-top: 50px;
     margin-bottom: -40px;
     padding-bottom: 50px;
-
     display: flex;
     flex-direction: column;
 }
@@ -35,6 +34,86 @@
     box-shadow: 2px 5px 5px black, 2px -5px 5px black;
     border: 10px solid rgb(23, 94, 175, 0.5);
 }
+.mainArticleContent {
+    margin: 10px calc(15vw - 35px) 30px calc(15vw - 35px);
+}
 .articleBodyText {
-    margin: 10px calc(15vw - 35px) 30px calc(15vw - 35px) ;
+    font-size: 15px;
+}
+.bodyTextHeading {
+    font-size: 18px;
+    margin-bottom: 0px;
+    clear: both;
+}
+.normalList {
+    margin-top: 5px;
+}
+
+.screenshot {
+    max-width: 100%;
+    height: auto;
+}
+.screenshotContainer::after {
+    content: "Click to enlarge/minimize.";
+    color: black;
+    font-size: 15px;
+    display: block;
+    font-style: italic;
+    text-align: center;
+}
+.screenshot:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px);
+}
+.enlargedImage {
+    position: relative;
+    width: 100vw;
+    transition: width 0.3s ease-in-out;
+    height: auto;
+    margin: auto auto;
+}
+.defaultImage {
+    position: block;
+    width: 250px;
+    transition: width 0.3s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+    .defaultImage {width: 100%;}
+}
+.floatLeft {
+    float: left;
+    margin: 10px 10px 10px 0px;
+}
+.floatRight {
+    float: right;
+    margin: 10px 0px 10px 10px;
+}
+.code {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    margin-bottom: 2px;
+}
+.codeContainer {
+    clear: both;
+    margin: 25px 0px 25px 0px;
+}
+.codeContainer::after {
+    content: "Scroll horizontally if needed.";
+    font-style: italic;
+}
+.red {
+    color: rgb(245, 35, 35);
+}
+.orange {
+    color: rgb(250, 94, 3);
+}
+.blue {
+    color: rgb(43, 134, 230);
+}
+.green {
+    color: rgb(48, 191, 91);
 }

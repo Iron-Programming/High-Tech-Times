@@ -117,3 +117,11 @@
 .green {
     color: rgb(48, 191, 91);
 }
+.audioCaption {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.youtubeVideo {
+    width: 75vw;
+    height: 42vw;
+}

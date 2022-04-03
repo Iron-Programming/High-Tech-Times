@@ -78,11 +78,19 @@
             <input id="submit" type="submit" value="Submit My Survey" />
             <input id="reset" type="reset" value="Cancel" />
 
-            <!-- Thank You Page -->
-            <input type="hidden" name="_next" value="thanks.html">
+            <!-- Thank You Page 
+            NOTE: This feature only works when hosted on Github.  SubmitForm does not work on your local computer.
+            -->
+            <input type="hidden" name="_next" value="https://iron-programming.github.io/High-Tech-Times/thanks.html">
 
             <!-- Subject Line (for email) -->
             <input type="hidden" name="_subject" value="Feedback from HTT.">
+
+            <!-- Disable RECAPTCHA -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Send Email back to User -->
+            <input type="hidden" name="_autoresponse" value="Howdy,\nThank you so much for giving us feedback! We appreciate all critique, encouragement, and requests we get.\nHappy learning,\nHTT Team">
           </form>
         </main>
 

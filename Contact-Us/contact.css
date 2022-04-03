@@ -38,7 +38,15 @@
     margin: 15px 5% 0px 5%;
     width: 90%;
 }
+.contactForm input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(16, 85, 163);
+}
 .contactForm input[type="reset"] {
     margin: 15px 5% 0px 5%;
     width: 90%;
+}
+.contactForm input[type="reset"]:hover {
+    cursor: pointer;
+    background-color: rgb(225, 225, 225);
 }

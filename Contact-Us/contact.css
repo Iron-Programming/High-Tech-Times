@@ -33,12 +33,12 @@
 .contactForm input[type=”text”]:focus {
     border: 3px solid rgb(17, 107, 211);
 }
-#formButtons input[type="submit"] {
+.contactForm input[type="submit"] {
     background-color: rgb(17, 107, 211);
     margin: 15px 5% 0px 5%;
     width: 90%;
 }
-#formButtons input[type="reset"] {
+.contactForm input[type="reset"] {
     margin: 15px 5% 0px 5%;
     width: 90%;
 }

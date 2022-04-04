@@ -33,6 +33,7 @@
 
     box-shadow: 2px 5px 5px black, 2px -5px 5px black;
     border: 10px solid rgb(23, 94, 175, 0.5);
+    box-sizing: border-box;
 }
 .mainArticleContent {
     margin: 10px calc(15vw - 35px) 30px calc(15vw - 35px);
@@ -124,4 +125,19 @@
 .youtubeVideo {
     width: 75vw;
     height: 42vw;
+}
+
+.overviewTable {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: calc(100vw - 10px);
+    margin: 10px calc(-15vw + 40px) 30px calc(-15vw + 40px);
+}
+.overviewTable td:last-child {
+    text-align: center;
+}
+.overviewTable th, .overviewTable td {
+    border: 2px solid rgb(23, 94, 175);
+    padding: 5px;
+    background-color: rgba(60, 126, 167, 0.5);
 }

@@ -132,6 +132,7 @@
     box-sizing: border-box;
     width: calc(100vw - 10px);
     margin: 10px calc(-15vw + 40px) 30px calc(-15vw + 40px);
+    background-color: rgba(60, 126, 167, 0.5);
 }
 .overviewTable td:last-child {
     text-align: center;
@@ -139,5 +140,4 @@
 .overviewTable th, .overviewTable td {
     border: 2px solid rgb(23, 94, 175);
     padding: 5px;
-    background-color: rgba(60, 126, 167, 0.5);
 }

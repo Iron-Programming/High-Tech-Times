@@ -1,2 +1,23 @@
 @charset "utf-8";
 
+.aboutContainer {
+    width:  100vw;
+    margin: 0px;
+    margin-top: 25px;
+}
+.aboutSection {
+    width: 49%;
+    margin: 0px;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.aboutSection img {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+@media only screen and (max-width: 580px) { 
+    .aboutSection { display: block; width: 100%; }
+}

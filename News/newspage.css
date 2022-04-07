@@ -13,7 +13,6 @@
 *********************************************/
 .newsArticle {
     width: 100%;
-    background-color: rgb(124, 124, 124, 0.5);
     margin-top: 50px;
     margin-bottom: -40px;
     padding-bottom: 50px;
@@ -22,8 +21,7 @@
 }
 .fullArticleName {
     font-size: 30px;
-    margin: 30px 50px;
-    text-align: center;
+    text-align: center
 }
 .thumbnailImage {
     width: 98%;

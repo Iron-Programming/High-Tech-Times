@@ -15,12 +15,32 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.formContainer {
+    padding: 0px;
+    margin-top: -55px;
+}
+img#contact {
+    margin-top: 50px;
+    width: 50%;
+    max-width: 800px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+img#contact2 {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 20% 10%;
+    transform: scaleX(-1);
+}
 .formTitle {
     font-size: 25px;
     margin: 50px 50px 10px 5%;
 }
-.formSubtitle{
+.formSubtitle {
     font-size: 18px;
     font-style: italic;
     margin: 0px 0px 50px 5%;
@@ -29,8 +49,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 90%;
-    max-width: 600px;
-    margin: 50px 5% 50px 5%;
+    margin: 20px 5% 50px 5%;
     background-color: rgba(125, 125, 125, 0.5);
     padding: 25px;
     box-sizing: border-box;
@@ -40,6 +59,24 @@ body, html {
     padding: 10px;
     background-color: white;
     border: 2px solid rgb(23, 94, 175);
+}
+@media only screen and (max-width: 769px) { 
+    img#contact { display: none; } 
+}
+@media only screen and (min-width: 770px) { 
+    .contactContainer {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactForm {
+        margin: 50px 0px 50px 0px;
+        height: 500px;
+        max-height: 500px;
+    }   
+}
+@media only screen and (max-width: 1600px) { 
+    img#contact2 { display: none; } 
 }
 #message {
     height: 400px;

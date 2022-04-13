@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+    File: GIT.html
+    Description: GIT.html is the home page
+    Authors: Nathan Cochran & Maxwell Williams
+    Date: 2022-04-01
+-->
+
+<html lang="en">
+
+<!-- Head -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>GIT & Github | HTT</title>
+    <link href="../style.css" rel="stylesheet" />
+    <link href="newspage.css" rel="stylesheet" />
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Scripts-->
+    <script src="../tools.js" defer></script>
+</head>
+
+<!-- Body -->
+
+<body onclick="closeNavigation()">
+    <header>
+        <h1 class="websiteTitle">High Tech Times</h1>
+        <nav>
+            <div class="desktop">
+                <a href="../index.html"><button>Home</button></a>
+                <a href="../news.html"><button>News</button></a>
+                <a href="../contact.html"><button>Contact Us</button></a>
+            </div>
+
+            <div class="mobile">
+                <a class="hamburger" href="javascript:void(0);" onclick="mobileNavigation()">
+                    <span class="material-icons">menu</span>
+                </a>
+                <div class="mobileLinks" style="display:none">
+                    <div class="flexCol">
+                        <a href="../index.html"><button>Home</button></a>
+                        <a href="../news.html"><button>News</button></a>
+                        <a href="../contact.html"><button>Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Title -->
+        <div class="pageNameSection">
+            <div class="pageNameBorderLeft"></div>
+            <h2 class="pageName">Article</h2>
+            <div class="pageNameBorderRight"></div>
+        </div>
+
+        <!-- News Article  -->
+        <article class="newsArticle">
+            <h4 class="fullArticleName">Newest Pc trends</h4>
+            <img class="thumbnailImage" src="../Media/GITImage.jpg">
+
+            <div class="mainArticleContent">
+                <h5 class="bodyTextHeading">Laptops Grow in Power</h5>
+                <p class="articleBodyText">
+				Intels 12th-generation core processors list a base power of 9 watts and the maximum 
+			potential thermal design power ranges from 29 watts on the U-Series to 115 watts for the quickest
+			H-Series processors, however. For comparison, Intel’s popular 8th-gen Core Mobile
+			processors, such as the Core i5-8250U and Core i7-8550U, had a maximum listed thermal
+			design power of 25 watts. This increase in wattage is excused by big leaps in core 
+			counts, with flagship 12th-gen Core processors packing up to a whopping 20 cores.
+                </p>
+                <h5 class="bodyTextHeading">CyberPowerPC Kinetic Case</h5>
+                <p class="articleBodyText">
+                  One of CyberPower's latest PC cases is a wild approach to practicality. It features a set
+			of small trianglular panels on the front that open and close to manage airflow. It looks
+			like something out a sci-fi movie. The company is calling its design the "intelligent
+			airflow." 
+			<img src="cyberpower.png" alt="">
+                </p>
+<!-- Footer -->
+    <footer>
+        <div class="logoContainer">
+            <img class="logoImage" src="../HTTLogoDesigns.png">
+            <p>igh Tech Times</p>
+        </div>
+        <div>
+            <h6>Navigation</h6>
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../news.html">News</a></p>
+            <p><a href="../contact.html">Contact Us</a></p>
+        </div>
+        <div>
+            <h6>About Us</h6>
+            <p><a href="../about.html">Our Team</a></p>
+        </div>
+        <div>
+            <h6>Follow Us</h6>
+            <p><a href="https://www.youtube.com/channel/UCCXGABBRW4WApi-F5tnv5Yg" target="_blank">YouTube</a></p>
+            <p><a href="https://discord.gg/cgbuSj4w" target="_blank">Discord</a></p>
+        </div>
+        <div class="copyrightCol">
+            <p>&copy; 2022 High Tech Times</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
